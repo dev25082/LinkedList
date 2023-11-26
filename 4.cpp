@@ -28,9 +28,9 @@ Node* convertArraytoLL(vector<int>arr){
 }
 
 int lengthofLL(Node*head){
+    Node *temp= head;
 
     int cnt=0;
-    Node *temp= head;
     while(temp){
       temp =temp->next;
       cnt++;
