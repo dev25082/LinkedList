@@ -65,7 +65,7 @@ Node* RemoveKthElement(Node *head,int k){
 
 
 int main(){
-    vector<int> arr = {2, 5, 8, 7};
+    vector<int> arr = {2, 5, 8};
     Node *head = convertArraytoLL(arr);
     head= RemoveKthElement(head,44);
     print(head);
