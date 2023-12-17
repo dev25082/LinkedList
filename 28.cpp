@@ -1,5 +1,5 @@
 Approach 1 : 
-T.C. = O(N)
+T.C. = O(2N)
 S.C. = O(1)
 
 Node* Sort012(Node* head) {
