@@ -40,3 +40,20 @@ S.C. = O(N)
 
 T.C. = O(N)
 S.C. = O(1)
+
+
+        Approach 3: Recursive
+
+    Node* reverseLinkedList(Node *head)
+{   
+    if(head==NULL || head->next==NULL) return head;
+    Node* newHead = reverseLinkedList(head->next);
+    Node* front = head->next;
+    front->next = head;
+    head->next = NULL;
+    return newHead;
+}
+
+
+T.C. = O(N)
+S.C. = O(N) // recursive stack space
